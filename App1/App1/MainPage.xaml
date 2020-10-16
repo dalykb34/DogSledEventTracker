@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage"
+             BackgroundImageSource="jeremyStenuitQisRqkmc7RYunsplash.jpg">
+            
+  
+        
+       
+    
+            <StackLayout Margin="30,21">
+                
+                <Entry Text="Welcome to Sled Dog Tracker" TextColor="DarkOliveGreen" FontAttributes="Bold" FontFamily="Majestic"/>
+             <Button Text="Add a Dog" Opacity=".5"
+                x:Name="AddDog"
+                Clicked="AddDog_Clicked"/>
+                <Button Text="Add an Event" Opacity=".5"
+                x:Name="AddEvent"
+                Clicked="AddEvent_Clicked"/>
+                <Button Text="View Stats" Opacity=".5"
+                x:Name="Stats"
+                Clicked="Stats_Clicked"/>
+                 <Button Text="Event Tracker" Opacity=".5"
+                x:Name="EventTracker"
+                Clicked="EventTracker_Clicked"/>
+        <Button Text="Weather" Opacity=".5"
+                        x:Name="Weather"
+                        Clicked="Weather_Clicked"/>
+                
+        <Label Text="Photo by  Jeremy Stenuit on Unsplash" Opacity=".5" VerticalOptions="End"/>
+    </StackLayout>
+            
+                 
+
+</ContentPage>

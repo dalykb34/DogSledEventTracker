@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.EventTracker"
+             BackgroundImageSource="matsSpeicherAfw4fBu1Nn8unsplash">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Dog name" VerticalOptions="Center"/>
+                <Label x:Name="lblStopwatch" FontSize="Medium"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+
+
+                <Button x:Name="btn1Start" Clicked="btn1Start_Clicked" Text="Start" TextColor="Green" Opacity=".4"/>
+                <Button x:Name="btn1Stop" Clicked="btn1Stop_Clicked" Text="Stop" TextColor="Red" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn1Start}}"/>
+                <Button x:Name="btn1Reset" Clicked="btn1Reset_Clicked" Text="Reset" TextColor="BlueViolet" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn1Start}}"/>
+                <!--<Label x:Name="totalTime1" WidthRequest="{Binding Path=Width, Source={x:Reference btn1Start}}"/>-->
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Dog name" VerticalOptions="Center"/>
+                <Label  x:Name="lblStopwatch2" FontSize="Medium" VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Button x:Name="btn2Start" Clicked="btn2Start_Clicked" Text="Start" TextColor="Green" Opacity=".4"/>
+                <Button x:Name="btn2Stop" Clicked="btn2Stop_Clicked" Text="Stop" TextColor="Red" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn2Start}}"/>
+                <Button x:Name="btn2Reset" Clicked="btn2Reset_Clicked" Text="Reset" TextColor="BlueViolet" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn2Start}}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Dog name" VerticalOptions="Center"/>
+                <Label  x:Name="lblStopwatch3" FontSize="Medium" VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Button x:Name="btn3Start" Clicked="btn3Start_Clicked" Text="Start" TextColor="Green" Opacity=".4"/>
+                <Button x:Name="btn3Stop" Clicked="btn3Stop_Clicked" Text="Stop" TextColor="Red" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn3Start}}"/>
+                <Button x:Name="btn3Reset" Clicked="btn3Reset_Clicked" Text="Reset" TextColor="BlueViolet" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn3Start}}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Dog name" VerticalOptions="Center"/>
+                <Label  x:Name="lblStopwatch4" FontSize="Medium" VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Button x:Name="btn4Start" Clicked="btn4Start_Clicked" Text="Start" TextColor="Green" Opacity=".4"/>
+                <Button x:Name="btn4Stop" Clicked="btn4Stop_Clicked" Text="Stop" TextColor="Red" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn4Start}}"/>
+                <Button x:Name="btn4Reset" Clicked="btn4Reset_Clicked" Text="Reset" TextColor="BlueViolet" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn4Start}}"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Dog name" VerticalOptions="Center"/>
+                <Label  x:Name="lblStopwatch5" FontSize="Medium" VerticalOptions="Start" 
+                HorizontalOptions="Start" />
+                <Button x:Name="btn5Start" Clicked="btn5Start_Clicked" Text="Start" TextColor="Green" Opacity=".4"/>
+                <Button x:Name="btn5Stop" Clicked="btn5Stop_Clicked" Text="Stop" TextColor="Red" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn5Start}}"/>
+                <Button x:Name="btn5Reset" Clicked="btn5Reset_Clicked" Text="Reset" TextColor="BlueViolet" Opacity=".4" WidthRequest="{Binding Path=Width, Source={x:Reference btn5Start}}"/>
+            </StackLayout>
+            <Label Text="Photo by  Mats Speicher on Unsplash" Opacity=".5" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

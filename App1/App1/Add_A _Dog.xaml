@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="App1.Add_A__Dog"
+             BackgroundImageSource="simonRaejY2XG6HU0unsplash">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add a Dog" FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Text="Dogs Name:"
+                Placeholder="Dogs Name"
+                   x:Name="dogName"/>
+            <Entry Text="Age:"
+                Placeholder="Dogs Age"
+                   x:Name="dogAge"/>
+            <controls:WrapLayout>
+                <Entry Text="Sled Position:" x:Name="SledPosition"/>
+                <controls:CheckBox DefaultText="Lead" HorizontalOptions="Start"
+                                   x:Name="CheckLead"/>
+                <controls:CheckBox DefaultText ="Team" HorizontalOptions="Fill"
+                                   x:Name="CheckTeam"/>
+                <controls:CheckBox DefaultText="Wheel" HorizontalOptions="Fill" 
+                                   x:Name="CheckWheel"/>
+            </controls:WrapLayout>    
+            <Entry Text="Works well with:" 
+                Placeholder="Works well with:"
+                   x:Name="worksWell"/>
+            <Entry Text="Doesn't work well with:"
+                Placeholder="Doesn't work well with"
+                   x:Name="doesntWorkWell"/>
+            <Button Text="Submit"
+                    x:Name="AddDogSubmit"
+                    Clicked="AddDogSubmit_Clicked"/>
+            <Label Text="Photo by  Simon Rae on Unsplash" Opacity=".5" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

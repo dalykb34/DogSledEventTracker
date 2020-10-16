@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.ViewStats"
+             BackgroundImageSource="ugurArpaciwOvSiqf9pZMunsplash">
+    <!--<ContentPage.BindingContext>
+        <vm:EventInfo />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <local:AllTrueMultiConverter x:Key="AllTrueConverter"/>
+        <local:InverterConverter x:Key="InverterConverter"/>
+    </ContentPage.Resources>-->
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="View Stats"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" TextColor="Black" FontAttributes="Italic" FontSize="Title"/>
+            
+            <ListView x:Name="eventInfoModel">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding Path= EventName}" FontSize="Medium" TextColor="Red"/>
+                            <Label Text="{Binding Path= Date}" FontSize="Medium" TextColor="Crimson"/>
+                            <Label Text="{Binding Path= StartTime}" FontSize="Small" TextColor="Green"/>
+                        </StackLayout>                    
+                        
+                       
+                    </DataTemplate>
+                    
+                </ListView.ItemTemplate>
+            </ListView>
+            <!--<Label>
+                <Label.Text>
+                    <MultiBinding StringFormat="{0} {1} {2} {3} {4}">
+                        <Binding Path="EventInfo.EventName"/>
+                        <Binding Path="EventInfo.Date"/>
+                        <Binding Path="EventInfo.StartTime"/>
+                        <Binding Path="EventInfo.EndTime"/>
+                        <Binding Path="EventInfo.NumberOfSleds"/>
+                        <Binding Path="DogInfo1.DogName"/>
+
+                    </MultiBinding>
+                </Label.Text>
+            </Label>-->
+
+            <!--<Label>
+                <Label.Text>
+                    <MultiBinding Converter="{StaticResource AllTrueConverter}">
+                        <Binding Path="EventInfo.EventName"/>
+                        <Binding Path="EventInfo.Date"/>
+                        <Binding Path="EventInfo.StartTime"/>
+                        <Binding Path="EventInfo.EndTime"/>
+                        <Binding Path="EventInfo.NumberOfSleds"
+                                 Converter="{StaticResource InverterConverter}"/>
+                        <Binding Path="DogInfo1.DogName"/>
+
+                    </MultiBinding>
+                </Label.Text>
+            </Label>
+
+            <Label Text="{Binding Date}"/>-->
+
+            <!--<StackLayout>
+                <Label Text="{Binding Path=EventName}" TextColor="Red" FontSize="Large"></Label>
+                <Label Text="{Binding Date}"/>
+                
+            </StackLayout>-->
+           
+            <Label Text="Photo by  Ugur Arpaci on Unsplash" Opacity=".5" VerticalOptions="End"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
